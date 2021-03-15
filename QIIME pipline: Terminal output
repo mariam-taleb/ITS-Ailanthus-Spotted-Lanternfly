@@ -1,0 +1,529 @@
+Last login: Tue Mar 10 14:03:56 on console
+Julies-Mac-Pro:~ julieurban$ cd downloads
+Julies-Mac-Pro:downloads julieurban$ cd 2020_Mariam_AIL_ITS/
+Julies-Mac-Pro:2020_Mariam_AIL_ITS julieurban$ nano trimmomatic_ITS.sh
+Julies-Mac-Pro:2020_Mariam_AIL_ITS julieurban$ chmod +x trimmomatic_ITS.sh
+Julies-Mac-Pro:2020_Mariam_AIL_ITS julieurban$ ./trimmomatic_ITS.sh
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU01_S1_L001_R1_001.fastq trimmed_forward_reads/JU01_S1.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 250797 Surviving: 189820 (75.69%) Dropped: 60977 (24.31%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU02_S2_L001_R1_001.fastq trimmed_forward_reads/JU02_S2.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 246792 Surviving: 191511 (77.60%) Dropped: 55281 (22.40%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU03_S3_L001_R1_001.fastq trimmed_forward_reads/JU03_S3.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 219181 Surviving: 164989 (75.28%) Dropped: 54192 (24.72%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU04_S4_L001_R1_001.fastq trimmed_forward_reads/JU04_S4.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 293769 Surviving: 236597 (80.54%) Dropped: 57172 (19.46%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU05_S5_L001_R1_001.fastq trimmed_forward_reads/JU05_S5.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 314713 Surviving: 237456 (75.45%) Dropped: 77257 (24.55%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU06_S6_L001_R1_001.fastq trimmed_forward_reads/JU06_S6.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 236398 Surviving: 175652 (74.30%) Dropped: 60746 (25.70%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU07_S7_L001_R1_001.fastq trimmed_forward_reads/JU07_S7.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 152175 Surviving: 121365 (79.75%) Dropped: 30810 (20.25%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU08_S8_L001_R1_001.fastq trimmed_forward_reads/JU08_S8.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 255226 Surviving: 174052 (68.20%) Dropped: 81174 (31.80%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU09_S9_L001_R1_001.fastq trimmed_forward_reads/JU09_S9.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 270457 Surviving: 116193 (42.96%) Dropped: 154264 (57.04%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU10_S10_L001_R1_001.fastq trimmed_forward_reads/JU10_S10.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 264254 Surviving: 206781 (78.25%) Dropped: 57473 (21.75%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU11_S11_L001_R1_001.fastq trimmed_forward_reads/JU11_S11.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 327735 Surviving: 258908 (79.00%) Dropped: 68827 (21.00%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU12_S12_L001_R1_001.fastq trimmed_forward_reads/JU12_S12.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 232176 Surviving: 184132 (79.31%) Dropped: 48044 (20.69%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU13_S13_L001_R1_001.fastq trimmed_forward_reads/JU13_S13.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 281362 Surviving: 208187 (73.99%) Dropped: 73175 (26.01%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU14_S14_L001_R1_001.fastq trimmed_forward_reads/JU14_S14.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 248625 Surviving: 178466 (71.78%) Dropped: 70159 (28.22%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU15_S15_L001_R1_001.fastq trimmed_forward_reads/JU15_S15.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 219776 Surviving: 168254 (76.56%) Dropped: 51522 (23.44%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU16_S16_L001_R1_001.fastq trimmed_forward_reads/JU16_S16.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 226857 Surviving: 168802 (74.41%) Dropped: 58055 (25.59%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU17_S17_L001_R1_001.fastq trimmed_forward_reads/JU17_S17.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 14781 Surviving: 10998 (74.41%) Dropped: 3783 (25.59%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU18_S18_L001_R1_001.fastq trimmed_forward_reads/JU18_S18.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 296572 Surviving: 227497 (76.71%) Dropped: 69075 (23.29%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU19_S19_L001_R1_001.fastq trimmed_forward_reads/JU19_S19.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 250861 Surviving: 195034 (77.75%) Dropped: 55827 (22.25%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU20_S20_L001_R1_001.fastq trimmed_forward_reads/JU20_S20.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 316536 Surviving: 258991 (81.82%) Dropped: 57545 (18.18%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU21_S21_L001_R1_001.fastq trimmed_forward_reads/JU21_S21.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 282120 Surviving: 200341 (71.01%) Dropped: 81779 (28.99%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU22_S22_L001_R1_001.fastq trimmed_forward_reads/JU22_S22.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 331096 Surviving: 255530 (77.18%) Dropped: 75566 (22.82%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU23_S23_L001_R1_001.fastq trimmed_forward_reads/JU23_S23.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 254057 Surviving: 190290 (74.90%) Dropped: 63767 (25.10%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU24_S24_L001_R1_001.fastq trimmed_forward_reads/JU24_S24.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 259283 Surviving: 193340 (74.57%) Dropped: 65943 (25.43%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU25_S25_L001_R1_001.fastq trimmed_forward_reads/JU25_S25.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 292443 Surviving: 213771 (73.10%) Dropped: 78672 (26.90%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU26_S26_L001_R1_001.fastq trimmed_forward_reads/JU26_S26.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 264987 Surviving: 198349 (74.85%) Dropped: 66638 (25.15%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU27_S27_L001_R1_001.fastq trimmed_forward_reads/JU27_S27.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 283988 Surviving: 222827 (78.46%) Dropped: 61161 (21.54%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU28_S28_L001_R1_001.fastq trimmed_forward_reads/JU28_S28.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 151329 Surviving: 131932 (87.18%) Dropped: 19397 (12.82%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU29_S29_L001_R1_001.fastq trimmed_forward_reads/JU29_S29.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 319597 Surviving: 259890 (81.32%) Dropped: 59707 (18.68%)
+TrimmomaticSE: Completed successfully
+TrimmomaticSE: Started with arguments:
+ -phred33 raw_forward_reads/JU59_S59_L001_R1_001.fastq trimmed_forward_reads/JU59_S59.fastq ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Automatically using 1 threads
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Reads: 435925 Surviving: 272306 (62.47%) Dropped: 163619 (37.53%)
+TrimmomaticSE: Completed successfully
+
+Julies-Mac-Pro:2020_Mariam_AIL_ITS julieurban$ macqiime
+
+MacQIIME version:
+MacQIIME 1.9.1-20150604
+
+Sourcing MacQIIME environment variables...
+
+  This is the same as a normal terminal shell, except your default
+  python is DIFFERENT (/macqiime/bin/python) and there are other new
+  QIIME-related things in your PATH.
+
+  Type "exit" (return) to go back to your normal shell
+
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ nano convert_fastq.sh
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ chmod +x convert_fastq.sh
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ ./convert_fastq.sh
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ add_qiime_labels.py -i converted_merged_reads/ -m experiment_map.txt -c InputFileName -n 1 -o combined_seqs
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ count_seqs.py -i combined_seqs/conbined_seqs.fna
+Error in count_seqs.py: No filepaths match pattern/name 'combined_seqs/conbined_seqs.fna'. All patterns must be matched at least once.
+
+If you need help with QIIME, see:
+http://help.qiime.org
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ mothur
+
+
+
+
+
+
+
+mothur v.1.25.0
+Last updated: 5/1/2012
+
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+University of Michigan
+pschloss@umich.edu
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+Type 'quit()' to exit program
+
+mothur > quit
+
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ macqiime
+
+MacQIIME version:
+MacQIIME 1.9.1-20150604
+
+Sourcing MacQIIME environment variables...
+
+  This is the same as a normal terminal shell, except your default
+  python is DIFFERENT (/macqiime/bin/python) and there are other new
+  QIIME-related things in your PATH.
+
+  Type "exit" (return) to go back to your normal shell
+
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ count_seqs.py -i combined_seqs/combined_seqs.fna
+
+5812261  : combined_seqs/combined_seqs.fna (Sequence lengths (mean +/- std): 150.5942 +/- 78.4490)
+5812261  : Total
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ mothur
+
+
+
+
+
+
+
+mothur v.1.25.0
+Last updated: 5/1/2012
+
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+University of Michigan
+pschloss@umich.edu
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+Type 'quit()' to exit program
+
+
+
+mothur > summary.seqs(fasta=combined.seqs/combined_seqs.fna
+
+[ERROR]:You are missing )
+Invalid.
+
+mothur > summary.seqs(fasta=combined.seqs/combined_seqs.fna)
+
+Unable to open combined.seqs/combined_seqs.fna
+[ERROR]: did not complete summary.seqs.
+
+mothur > summary.seqs(fasta=combined_seqs/combined_seqs.fna)
+
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1	36	36	0	1	1
+2.5%-tile:	1	41	41	0	3	145307
+25%-tile:	1	81	81	0	4	1453066
+Median: 	1	135	135	0	4	2906131
+75%-tile:	1	223	223	0	5	4359196
+97.5%-tile:	1	294	294	0	7	5666955
+Maximum:	1	301	301	6	186	5812261
+Mean:	1	150.712	150.712	0.000725707	4.62359
+# of Seqs:	5812261
+
+Output File Name: 
+combined_seqs/combined_seqs.fna.summary
+
+
+mothur >  screen.seqs(fasta=current, minlength=135, maxlength=300, maxambig=0, maxhomop=8)
+
+Using combined_seqs/combined_seqs.fna as input file for the fasta parameter.
+
+Processing sequence [...]
+
+Output File Names: 
+combined_seqs/combined_seqs.good.good.fna
+combined_seqs/combined_seqs.good.bad.accnos
+
+
+It took 50 secs to screen 2858898 sequences.
+
+mothur > summary.seqs(fasta=current)
+
+Using combined_seqs/combined_seqs.good.good.fna as input file for the fasta parameter.
+
+		Start	End	NBases	Ambigs	Polymer	NumSeqs
+Minimum:	1	200	200	0	3	1
+2.5%-tile:	1	202	202	0	3	44415
+25%-tile:	1	227	227	0	4	444150
+Median: 	1	255	255	0	5	888300
+75%-tile:	1	267	267	0	6	1332450
+97.5%-tile:	1	300	300	0	7	1732185
+Maximum:	1	300	300	0	8	1776599
+Mean:	1	248.11	248.11	0	5.18695
+# of Seqs:	1776599
+
+Output File Name: 
+combined_seqs/combined_seqs.good.good.fna.summary
+
+
+mothur > quit
+
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ vsearch --uchime_denovo combined_seqs/combined_seqs.good.good.fna -- nonchimera combined_seqs.good.good.nonchimera_ref.fna
+
+
+Unrecognized string on command line (nonchimera)
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ vsearch --uchime_denovo combined_seqs/combined_seqs.good.good.fna -- nonchimeras combined_seqs.good.good.nonchimera_ref.fna
+
+
+Unrecognized string on command line (nonchimeras)
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ vsearch --uchime_denovo combined_seqs/combined_seqs.good.good.fna --nonchimeras combined_seqs.good.good.nonchimera_ref.fna
+vsearch v1.9.10_osx_x86_64, 64.0GB RAM, 24 cores
+https://github.com/torognes/vsearch
+
+Reading file combined_seqs/combined_seqs.good.good.fna 100%  
+443136300 nt in 1776599 seqs, min 200, max 300, avg 249
+Masking 100%  
+Sorting by abundance 100%
+Counting unique k-mers 100%  
+Detecting chimeras 100%  
+Found 0 (0.0%) chimeras, 1776599 (100.0%) non-chimeras,
+and 0 (0.0%) suspicious candidates in 1776599 sequences.
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ pick_de_novo_otus.py -i combined_seqs.good.good.nonchimera_ref.fna -o denovo_otu/
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ mkdir usearch_rep_seqs/
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ count_seqs.py -i denovo_otu/rep_set/combined_seqs.good.good.nonchimera_ref_rep_set.fasta
+
+37088  : denovo_otu/rep_set/combined_seqs.good.good.nonchimera_ref_rep_set.fasta (Sequence lengths (mean +/- std): 245.3711 +/- 26.1146)
+37088  : Total
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ biom summarize_table -i denovo_otu/otu_table.biom -o summary_otu_table.txt
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ biom convert -i denovo_otu/otu_table.biom -o denovo_otu_table.txt --to-tsv --table-type="OTU table" --header-key taxonomy --output-metadata-id taxonomy
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ single_rarefaction.py -i denovo_otu/otu_table.biom -o otu_table_rarefied31387.biom -d 31387
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ biom convert -i otu_table_rarefied31387.biom -o otu_table_rarefied31387.txt --to-tsv --table-type="OTU table" --header-key taxonomy --output-metadata-id taxonomy
+MacQIIME Julies-Mac-Pro:2020_Mariam_AIL_ITS $ 
