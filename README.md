@@ -12,3 +12,5 @@ FunGUILD was then used to assign guilds and functional groups where possible, an
 The datasets were manipuled for ease of use with Microsoft Excel (publish files) and data were analyzed with the R Statistical Software v. 4.0.3. (publish code).
 
 Plots were edited for style using Adobe Illustrator CC 2020. (publish plots) 
+
+![Data mgmt flow Sankey_V2](https://user-images.githubusercontent.com/60794759/111184644-89911d00-8587-11eb-9983-d65b65c12ae5.png)
