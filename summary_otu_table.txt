@@ -1,0 +1,45 @@
+Num samples: 30
+Num observations: 37088
+Total count: 1776599
+Table density (fraction of non-zero values): 0.102
+
+Counts/sample summary:
+ Min: 3587.0
+ Max: 83176.0
+ Median: 60474.000
+ Mean: 59219.967
+ Std. dev.: 17044.150
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ JU17: 3587.0
+ JU09: 31387.0
+ JU59: 37033.0
+ JU15: 42445.0
+ JU23: 44314.0
+ JU28: 44947.0
+ JU27: 46029.0
+ JU16: 49208.0
+ JU12: 51507.0
+ JU14: 51807.0
+ JU13: 52597.0
+ JU03: 56916.0
+ JU26: 58036.0
+ JU06: 59517.0
+ JU20: 59616.0
+ JU25: 61332.0
+ JU11: 65108.0
+ JU02: 67411.0
+ JU01: 67792.0
+ JU04: 68096.0
+ JU07: 68224.0
+ JU19: 68517.0
+ JU29: 73282.0
+ JU10: 74719.0
+ JU18: 76488.0
+ JU05: 77220.0
+ JU24: 78392.0
+ JU21: 78540.0
+ JU22: 79356.0
+ JU08: 83176.0
