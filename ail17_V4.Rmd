@@ -1,0 +1,199 @@
+---
+title: "AIL_ITS"
+output: html_document
+---
+#Establish environment and data
+```{r working directory}
+setwd('C:/Users/Maria/OneDrive/Documents/Dissertation/1 ITS AIL/Analysis/R Code dev/R code pub')
+```
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(vegan)
+library(ggplot2)
+library(viridis)
+library(hillR)
+library(readr)
+library(dplyr)
+library (RColorBrewer)
+library(BiodiversityR)
+library(ggforce)
+library(gridExtra)
+library(cowplot)
+library(lme4)
+library(pander)
+library(tidyverse)
+```
+
+```{r data import, message=FALSE, warning=FALSE}
+otu_table <- as.matrix(read.csv("otu.table.csv"))
+tax_table<- read.csv("tax.table.csv")
+guild_table <- as.matrix(read.csv("guildmatrix.csv"))
+sample_data<- read.csv("sampledata.csv")
+  as.factor(sample_data$plant)
+  as.factor(sample_data$week)
+  as.numeric(sample_data$rh)
+  as.numeric(sample_data$prcp)
+  as.numeric(sample_data$tempavg)
+  as.numeric(sample_data$tempmax)
+  as.logical(sample_data$smobs)
+tax_frame <- read.csv("tax.frame.csv")
+guild_frame <- read.csv("guildmelt.csv")
+```
+
+```{r define vectors etc., message=FALSE, warning=FALSE}
+gen_order <- c('Trichomerium', 'Strelitziana', 'Sarcinomyces', 'Rhinocladiella', 'Bradymyces', 'Diplodia', 'Dothiorella', 'Alternaria', 'Camarographium', 'Chaetosphaeronema', 'Coniothyrium', 'Curvularia', 'Didymella', 'Epicoccum',   'Leptosphaerulina', 'Lophiostoma', 'Neoascochyta', 'Neocucurbitaria', 'Neosetophoma', 'Neovaginatispora', 'Paraconiothyrium', 'Parapyrenochaeta',   'Phaeosphaeria', 'Phaeosphaeriopsis', 'Phoma', 'Pithomyces', 'Pleospora', 'Sclerostagonospora', 'Setophaeosphaeria', 'Sigarispora', 'Stagonospora',  'Stagonosporopsis', 'Arthrocatena', 'Cladosporium', 'Rachicladosporium', 'Aureobasidium', 'Dothiora', 'Hormonema', 'Leptospora', 'Pringsheimia', 'Sydowia', 'Capnobotryella', 'Cercospora', 'Devriesia', 'Mycosphaerella', 'Neodevriesia', 'Pseudoveronaea', 'Sphaerulina', 'Apiosporina', 'Phyllactinia', 'Articulospora', 'Calloria', 'Phialocephala', 'Phomopsis', 'Plectosphaerella', 'Seiridium', 'Phaeococcomyces', 'Tricellula', 'Taphrina', 'Crepidotus', 'Peniophora', 'Yuchengia', 'Filobasidium', 'Bullera', 'Bulleribasidium', 'Cryptococcus', 'Derxomyces', 'Dimennazyma', 'Dioszegia', 'Fonsecazyma', 'Genolevuria', 'Hannaella', 'Papiliotrema', 'Vishniacozyma', 'Kondoa', 'Buckleyzyma', 'Bannoa', 'Erythrobasidium', 'Symmetrospora', 'Puccinia', 'unidentified')
+guild_order<- c('Endophyte- Sooty Mold', 'Endophyte- Undefined Saprobe', 'Litter Saprobe', 'Undefined Saprobe', 'Wood Saprobe', 'Wood Saprobe- Litter Saprobe- Plant Pathogen', 'Litter Saprobe- Animal Pathogen', 'Undefined Saprobe- Plant Pathogen', 'Wood Saprobe- Plant Pathogen', 'Undefined Saprobe- Plant Pathogen- Animal Pathogen',  'Animal Parasite', 'Mycoparasite', 'Plant Pathogen', 'Endophyte- Plant Pathogen- Lichen Parasite', 'Endophyte', 'Lichen', 'Endophyte- Undefined Saprobe- Plant Pathogen- Lichen Parasite', 'Endophyte- Wood Saprobe- Plant Pathogen', 'Endophyte- Wood Saprobe- Plant Pathogen- Fungal Parasite- Lichen Parasite') 
+sam49<- c('5.5', '5.6', '5.7', '5.8', '5.9', '6.4', '6.5', '6.6', '6.7', '6.8', '6.9', '9.4', '9.6', '9.7', '9.9', '10.4', '10.5', '10.6', '10.7', '10.8', '11.4', '11.5', '11.6')
+wk49<- c('4', '5', '6', '7', '8', '9')
+dates<- data.frame(week = c(4, 5, 6, 7, 8, 9), 
+            date= c('Aug 24', 'Aug 31', 'Sept 8', 'Sept 14', 'Sept 25','Oct 4'))
+```
+
+
+##Subsetted datasets
+```{r subset data weeks 4-9, message=FALSE, warning=FALSE}
+#data frame subsets
+tax_frame<- filter(tax_frame, week %in% c('4', '5', '6', '7', '8', '9'))
+guild_frame<- filter(guild_frame, week %in% c('4', '5', '6', '7', '8', '9'))
+sample_data<- filter(sample_data, week %in% c('4', '5', '6', '7', '8', '9'))
+
+#otu matrix subset
+otu_table[,2:6868]<- sapply(otu_table[ ,2:6868], as.numeric)
+rownames(otu_table)<- otu_table[,1]
+otu_table<- subset(otu_table, row.names(otu_table) %in% c('5.5', '5.6', '5.7', '5.8', '5.9', '6.4', '6.5', '6.6', '6.7', '6.8', '6.9', '9.4', '9.6', '9.7', '9.9', '10.4', '10.5', '10.6', '10.7', '10.8', '11.4', '11.5', '11.6'))
+
+#guild matrix subset
+guild_table[,2:20]<- sapply(guild_table[ ,2:20], as.numeric)
+rownames(guild_table)<- guild_table[,1]
+guild_table<- subset(guild_table, row.names(guild_table) %in% c('5.5', '5.6', '5.7', '5.8', '5.9', '6.4', '6.5', '6.6', '6.7', '6.8', '6.9', '9.4', '9.6', '9.7', '9.9', '10.4', '10.5', '10.6', '10.7', '10.8', '11.4', '11.5', '11.6'))
+```
+
+```{r subset taxa, message=FALSE, warning=FALSE}
+#without "unidentified"
+tax_framefilt<- subset(tax_frame, tax_frame$g != "unidentified")
+
+##subset only top most abundant genera (by seqct) in weeks 4-9
+tax_frametop<- filter(tax_frame, g %in%   c('Aureobasidium', 'Cryptococcus',	'Dothiorella',	
+                          'Filobasidium',	'Genolevuria',	'Leptosphaerulina',	
+                          'Neosetophoma',	'Phoma',	'Phyllactinia',	
+                            'Trichomerium'))
+guild_frametop<- filter(guild_frame, g %in% gen_order)
+```
+
+#Relative abundances
+
+```{r bar genera abund/week}
+genabund<- ggplot(data=tax_frame, aes(x=factor(week), y=seqct, fill=factor(g, levels = gen_order)))+ 
+  geom_bar(position="fill", stat= "identity")+
+  theme_classic()+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA),
+        legend.position = "none" )+
+  scale_fill_viridis(discrete=TRUE)+   
+  ggtitle("Abundance Proportions by g")+
+  xlab("Week")+
+  ylab("Abundance Proportion")
+genabund
+```
+```{r bar lifestyle abund/week}
+lifeabund<- ggplot(data=guild_frame, aes(x=factor(week), y=seqct, fill=factor(func, levels = guild_order)))+ 
+  geom_bar(position="fill", stat= "identity")+
+  theme_classic()+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA), 
+        legend.position = "none")+
+  scale_color_viridis(discrete=TRUE)+
+  ggtitle("Abundance Proportions by Functional group by Week")+
+  xlab("Week")+
+  ylab("Abundance Proportion")
+lifeabund
+```
+
+```{r line top 10 genera}
+tengen<- ggplot(data=tax_frametop, aes(week,seqct))+
+  geom_line(aes(color = g), size= 1, stat= "summary", fun = mean)+
+  geom_point(aes(color = g), size= 2, stat= "summary", fun = mean)+
+  theme_classic()+
+  theme(legend.position ="none")+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA))+
+  ggtitle("Mean abundance top 10 genera by week")
+tengen
+```
+  c('Aureobasidium', 'Cryptococcus',	'Dothiorella',	
+                          'Filobasidium',	'Genolevuria',	'Leptosphaerulina',	
+                          'Neosetophoma',	'Phoma',	'Phyllactinia',	
+                            'Trichomerium')
+```{r linear models by genera}
+lmgen<- function(tax_frametop) {
+  summary(lm(seqct ~ week, data = tax_frametop))
+}
+by(tax_frametop, tax_frametop$g, lmgen)
+
+```
+
+# Alpha diversity
+```{r calculate diversity indices}
+df.div<-data.frame(sample_data) #add sample info to div matrix
+df.div$shannon<- diversity(otu_table, index = "shannon") #shannon
+df.div$rich<- hill_taxa(otu_table, q=0) #Hill richness
+df.div$even<- hill_taxa(otu_table, q=2) #Hill evenness
+```
+
+```{r tests of normality alpha div}
+shapiro.test(df.div$shannon)
+shapiro.test(df.div$rich)
+shapiro.test(df.div$even)
+```
+
+##Tests of significance, diversity estimates over time
+```{r GS linear model}
+glmeven<- glm(even ~ week +(1|plant), data = df.div)
+summary(glmeven)
+```
+
+```{r GS line over time}
+GSweek<- ggplot(data=df.div, aes(x=week, y=even))+
+  geom_point(aes(x=week, y=even))+
+  geom_smooth(method=lm)+
+  theme_classic()+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA))+
+  theme(legend.position="none")+
+  ggtitle("GS week")
+GSweek
+```
+
+```{r chao linear model }
+lmrich<-glm(rich ~week +(1|plant), data=df.div)
+summary(lmrich)
+```
+
+```{r Chao line over time}
+chaoweek<- ggplot(data=df.div, aes(x=week, y=rich))+
+  geom_point(aes(x=week, y=rich))+
+  geom_smooth(method=lm)+
+  theme_classic()+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA))+
+  theme(legend.position="none")+
+  ggtitle("Chao week")
+chaoweek
+```
+
+```{r shannon linear model }
+lmshan<-glm(shannon ~week +(1|plant), data=df.div)
+summary(lmshan)
+```
+
+```{r shannon line over time}
+shanweek<- ggplot(data=df.div, aes(x=week, y=shannon))+
+  geom_point(aes(x=week, y=shannon))+
+  geom_smooth(method=lm)+
+  theme_classic()+
+  theme(panel.background = element_rect(fill = "transparent", colour = NA),  
+        plot.background = element_rect(fill = "transparent", colour = NA))+
+  theme(legend.position="none")+
+  ggtitle("Shannon week")
+shanweek
+```
